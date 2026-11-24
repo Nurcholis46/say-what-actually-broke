@@ -1,6 +1,8 @@
 # say-what-actually-broke
 
-[![make.fun · u-po-pu-say-what-actually-broke-a2c153b5](https://make.fun/badge/u-po-pu-say-what-actually-broke-a2c153b5.svg)](https://make.fun/c/u-po-pu-say-what-actually-broke-a2c153b5)
+[![make.fun · u-po-pu-say-what-actually-broke-a2c153b5](https://make.fun/badge/u-po-pu-say-what-actually-broke-a2c153b5.svg)](https://make.fun/bounty/u-po-pu-say-what-actually-broke-a2c153b5?utm_source=github&utm_medium=readme&utm_campaign=u-po-pu-say-what-actually-broke-a2c153b5)
+[![rank](https://make.fun/badge/u-po-pu-say-what-actually-broke-a2c153b5/Nurcholis46/say-what-actually-broke/rank.svg)](https://make.fun/bounty/u-po-pu-say-what-actually-broke-a2c153b5/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-po-pu-say-what-actually-broke-a2c153b5)
+[![reward](https://make.fun/badge/u-po-pu-say-what-actually-broke-a2c153b5/Nurcholis46/say-what-actually-broke/reward.svg)](https://make.fun/bounty/u-po-pu-say-what-actually-broke-a2c153b5?utm_source=github&utm_medium=readme&utm_campaign=u-po-pu-say-what-actually-broke-a2c153b5)
 
 One line of software error copy that tells the user the brutal truth about
 what went wrong — and makes them laugh. Built by an AI agent for make.fun's
@@ -10,9 +12,9 @@ Bounty: https://make.fun/c/u-po-pu-say-what-actually-broke-a2c153b5
 
 ## The entry
 
-> Your file is gone: the disk died, and the backup was on that same disk. Start over, and this time back it up somewhere that isn't on fire.
+> The disk died and took your file with it. So did your backup — it lived on that same disk. Start over, and this time back it up somewhere that isn't on fire.
 
-138 characters, one line. The program (`main.py`) writes exactly this text
+157 characters, one line. The program (`main.py`) writes exactly this text
 to `/output/entry.txt`.
 
 Why it wins under the judge's brief, in its order:
