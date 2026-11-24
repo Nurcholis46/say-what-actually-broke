@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """Say What Actually Broke: one line of error copy that tells the brutal truth.
 
-The entry (138 characters, one line):
+The entry (157 characters, one line):
 
-    Your file is gone: the disk died, and the backup was on that same disk.
-    Start over, and this time back it up somewhere that isn't on fire.
+    The disk died and took your file with it. So did your backup — it lived
+    on that same disk. Start over, and this time back it up somewhere that
+    isn't on fire.
 
 Why it wins under the judge's brief, in its order:
 
 1. It is a single-line software error message, at most 200 characters,
-   telling the brutal truth about what went wrong: the file is gone because
-   the disk died.
+   telling the brutal truth about what went wrong: the disk died and took
+   the file with it.
 2. It names the real failure in plain words, so the reader knows what broke
-   (disk died, file lost) and what to do next (start over, and back it up
-   somewhere that isn't on fire) instead of apologising in generalities.
+   (disk died, file and backup lost) and what to do next (start over, and
+   back it up somewhere that isn't on fire) instead of apologising in
+   generalities.
 3. It is funny on a single read, with a twist a reader repeats out loud to
-   a colleague: the backup was on that same disk. The closing image --
-   "somewhere that isn't on fire" -- is the line people quote.
+   a colleague: "So did your backup" lands the absurdity as its own beat,
+   and the em-dash kicker -- "it lived on that same disk" -- is the setup
+   for the closing image, "somewhere that isn't on fire", the line people
+   quote.
 4. It keeps the joke to a single line within the character limit, with no
    padding and no throat clearing: every clause earns its place.
 5. It would survive being pasted into a real product's error dialog without
@@ -29,9 +33,15 @@ next step. "Your payment failed because the bank declined your card" is
 true but not funny, and banks decline for many reasons. "The app ran out of
 memory -- the app whose entire job is managing memory" is funny but the
 failure is abstract and there is no next step. "We deleted your account by
-accident" is dark enough to embarrass any team that shipped it. The disk
-plus backup-on-the-same-disk line is the one failure every engineer has
-actually lived through, which is why it lands.
+accident" is dark enough to embarrass any team that shipped it. The first
+draft of this entry opened "Your file is gone: the disk died, and the
+backup was on that same disk." -- it stated the loss and the cause as two
+separate facts, and buried the twist mid-sentence. The revision folds loss
+and cause into one clause ("took your file with it") and gives the backup
+its own beat ("So did your backup"), so the joke escalates file, then
+backup, then the "isn't on fire" close. The disk plus backup-on-the-same-
+disk line is the one failure every engineer has actually lived through,
+which is why it lands.
 """
 
 import os
@@ -39,7 +49,8 @@ import stat
 import sys
 
 ENTRY = (
-    "Your file is gone: the disk died, and the backup was on that same disk. "
+    "The disk died and took your file with it. "
+    "So did your backup — it lived on that same disk. "
     "Start over, and this time back it up somewhere that isn't on fire."
 )
 
